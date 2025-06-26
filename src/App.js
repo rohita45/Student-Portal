@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Register from "./Components/Register";
+import OTPVerify from "./Components/OTPVerify";
+import MobileLogin from "./Components/FamilyDetail";
+import FamilyDetail from "./Components/FamilyDetail";
+import FamilyInfo from "./Components/FamilyInfo";
+import Success from "./Components/Success";
 
-function App() {
+
+export default function App() {
+  const alreadyRegistered = () => sessionStorage.getItem("otpUser");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Navigate to={alreadyRegistered() ? "/otpverify" : "/register"} />}
+        />
+        <Route path="/register" element={<Register />} />
+        <Route path="/otpverify" element={<OTPVerify />} />
+        <Route path="/familyDetail" element={<FamilyDetail/>}/>
+        <Route path="/familyInfo" element={<FamilyInfo/>}/>
+        <Route path="/success" element={<Success/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
