@@ -55,7 +55,7 @@ export default function FamilyInfo() {
             <tr>
               <th>#</th><th>Relation</th><th>Name</th><th>Phone</th>
               <th>Email</th><th>Occupation</th><th>Birth Date</th>
-              <th>Blood Group</th>{/* NEW */}
+              <th>Blood Group</th>
             </tr>
           </thead>
           <tbody>

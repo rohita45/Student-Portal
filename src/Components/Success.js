@@ -14,7 +14,7 @@ export default function Success() {
           alt="Thumbs up"
         />
       </div>
-      <h1 className="display-5 text-success mb-3">Registration Successful!</h1>
+      <h1 className="display-5 text-success mb-3">Registration Payment Successful!</h1>
       <p className="lead">
         Thank you for paying ₹{amount.toFixed(2)} for {students} student
         {students !== 1 && "s"}.

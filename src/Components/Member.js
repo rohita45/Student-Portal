@@ -7,7 +7,7 @@ export default function Member() {
   const navigate = useNavigate();
   const user     = JSON.parse(sessionStorage.getItem("loggedInUser") || "{}");
 
-  if (!user.username) {           // safety guard
+  if (!user.username) {        
     navigate("/", { replace: true });
     return null;
   }
@@ -30,10 +30,7 @@ export default function Member() {
                 onClick={() => navigate("/familyDetail")}>
           Fill Family Form
         </button>
-        {/* <button className="btn btn-outline-primary"
-                onClick={() => navigate("/parent-links")}>
-          Link Parents &nbsp;⇄&nbsp; Students
-        </button> */}
+
       </div>
     </section>
   );

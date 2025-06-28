@@ -76,10 +76,7 @@ export default function OTPVerify() {
 
   const handleVerify = () => {
     if (otp === sentOtp) {
-      // alert("✅ Verified!");
-      // sessionStorage.removeItem("otpUser");
-      // navigate("/familyDetail");
-      const user = JSON.parse(sessionStorage.getItem("otpUser") || "{}");
+     const user = JSON.parse(sessionStorage.getItem("otpUser") || "{}");
      sessionStorage.setItem("loggedInUser", JSON.stringify(user)); // reuse later
      sessionStorage.removeItem("otpUser");                         // tidy up
      alert("✅ Verified!");
