@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import schoolLogo from "../Image/DelhiSchool.jpg";
 
 /* ── reusable constants ──────────────────────────────── */
-const PHONE_RX = /^[6-9]\d{9}$/;            // Indian 10-digit mobile
+const PHONE_RX = /^[1-9]\d{9}$/;            // Indian 10-digit mobile
 const EMAIL_RX =
   /^(?=.{1,254}$)(?=.{1,64}@)[A-Za-z0-9](?:[A-Za-z0-9._%+-]{0,62}[A-Za-z0-9])?@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,24}$/;
 
@@ -84,7 +84,7 @@ export default function Register() {
                   <input
                     name="phone"
                     type="tel"
-                    pattern="[6-9]\d{9}"
+                    pattern="[1-9]\d{9}"
                     maxLength={10}
                     placeholder="Phone (10-digit)"
                     className="form-control"
