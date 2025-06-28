@@ -1,5 +1,4 @@
-// src/utils/generateOtp.js
-/**
+/*
  * Generates a numeric OTP of the given length (default: 6 digits).
  */
 export function generateOTP(length = 6) {

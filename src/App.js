@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Register from "./Components/Register";
 import OTPVerify from "./Components/OTPVerify";
-import MobileLogin from "./Components/FamilyDetail";
+import Member from "./Components/Member";
 import FamilyDetail from "./Components/FamilyDetail";
 import FamilyInfo from "./Components/FamilyInfo";
 import Success from "./Components/Success";
@@ -20,6 +20,7 @@ export default function App() {
         />
         <Route path="/register" element={<Register />} />
         <Route path="/otpverify" element={<OTPVerify />} />
+        <Route path="/member" element={<Member/>}/>
         <Route path="/familyDetail" element={<FamilyDetail/>}/>
         <Route path="/familyInfo" element={<FamilyInfo/>}/>
         <Route path="/success" element={<Success/>}/>
@@ -27,3 +28,6 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+
+

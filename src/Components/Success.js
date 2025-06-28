@@ -1,25 +1,3 @@
-// import React from 'react';
-
-// const Success = () => {
-//   return (
-//     <div className="success-container">
-  
-      
-//       <h2 className="school-name">Delhi Public School</h2>
-//       <p className="address">
-//         Nyati Estate Rd, Nyati County, Mohammed Wadi, Pune,<br />
-//         Autadwadi Handewadi, Maharashtra 411060
-//       </p>
-
-
-
-//       <button className="success-button">Registration Successful</button>
-//     </div>
-//   );
-// };
-
-// export default Success;
-
 import { useLocation, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
